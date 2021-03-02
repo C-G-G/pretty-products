@@ -1,0 +1,105 @@
+html {
+  background-color: #fff;
+  box-sizing: border-box;
+  font-family: Oswald, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+p {
+  font-family: Karma, serif;
+  /* font-size: 1.4rem; */
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+main ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 1rem;
+  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+h2 {
+  color: #6f00e7;
+  font-size: 2rem;
+}
+
+li {
+  border: 3px solid #987ffa;
+  border-radius: 6px;
+  list-style-type: none;
+  /* padding: 1.5em; */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-content: center; */
+  align-items: center;
+  padding: 1rem;
+}
+
+li > img:first-child {
+  width: 60%;
+}
+
+h2 + p {
+  font-weight: lighter;
+}
+
+li span {
+  background-color: blue;
+  color: white;
+}
+
+/* li p {
+  flex-grow: 1;
+} */
+
+li p:last-child {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+
+/* HOW TO PUT CART IMAGE AND TEXT SIDE BY SIDE ??? */
+
+.cart img {
+  display: inline;
+  width: 20%; /* UNEXPECTED ACCORDING TO MARKBOT BUT THEN ??? */
+}
+
+.cart {
+  display: flex;
+  background-color: #6f00e7;
+  border-radius: 3em;
+  font-family: Oswald, sans-serif;
+  padding: .25em 1rem;
+}
+
+.cart a {
+  color: white;
+  text-decoration: none;
+}
+
+/* .addcart {
+  font-size: .8rem;
+} */
