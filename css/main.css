@@ -1,8 +1,8 @@
 html {
   background-color: #fff;
   box-sizing: border-box;
-  font-family: Oswald, sans-serif;
-  font-size: 1rem;
+  font-family: "Oswald", sans-serif;
+  /* font-size: 1rem; */
   line-height: 1.5;
 }
 
@@ -29,9 +29,8 @@ main ul {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   gap: 1rem;
-  align-items: center;
-  /* justify-content: center;
-  align-items: center; */
+
+  /* removing align-items: center allowed cards stretching to same height */
 }
 
 img {
@@ -42,19 +41,18 @@ img {
 h2 {
   color: #6f00e7;
   font-size: 2rem;
+  margin-bottom: 0;
 }
 
 li {
   border: 3px solid #987ffa;
   border-radius: 6px;
   list-style-type: none;
-  /* padding: 1.5em; */
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
-  /* align-content: center; */
   align-items: center;
   padding: 1rem;
+  width: 100%;
 }
 
 li > img:first-child {
@@ -63,28 +61,31 @@ li > img:first-child {
 
 h2 + p {
   font-weight: lighter;
+  margin-top: 0;
+  text-align: center;
 }
 
 li span {
-  background-color: blue;
   color: white;
 }
 
-/* li p {
-  flex-grow: 1;
-} */
-
 li p:last-child {
   display: flex;
-  align-items: center;
-  /* justify-content: space-between; */
+  align-items: center; /* vertical alignment (center) */
+  justify-content: space-between;
+  margin-bottom: 0;
+  margin-top: .25em;
+  width: 100%;
+  flex-grow: 1;
 }
 
 /* HOW TO PUT CART IMAGE AND TEXT SIDE BY SIDE ??? */
 
+/* UNEXPECTED ACCORDING TO MARKBOT BUT THEN ??? */
+
 .cart img {
-  display: inline;
-  width: 20%; /* UNEXPECTED ACCORDING TO MARKBOT BUT THEN ??? */
+  /* display: inline; */
+  width: 25%;
 }
 
 .cart {
@@ -93,13 +94,20 @@ li p:last-child {
   border-radius: 3em;
   font-family: Oswald, sans-serif;
   padding: .25em 1rem;
+  text-align: left;
 }
 
 .cart a {
   color: white;
+  padding: .2em;
   text-decoration: none;
 }
 
-/* .addcart {
-  font-size: .8rem;
-} */
+.icons {
+  display: flex;
+}
+
+.icons a:first-child {
+  margin-right: .5em;
+  /* border: 2px solid red; */
+}
