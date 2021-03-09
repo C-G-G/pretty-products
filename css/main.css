@@ -1,7 +1,10 @@
 html {
   background-color: #fff;
   box-sizing: border-box;
-  font-family: "Oswald", sans-serif;
+  font-family: Karma, serif;
+
+  /* font-family: Oswald, sans-serif; */
+
   /* font-size: 1rem; */
   line-height: 1.5;
 }
@@ -14,10 +17,10 @@ body {
   margin: 0;
 }
 
-p {
+/* p {
+
   font-family: Karma, serif;
-  /* font-size: 1.4rem; */
-}
+} */
 
 main {
   width: 80%;
@@ -40,6 +43,7 @@ img {
 
 h2 {
   color: #6f00e7;
+  font-family: Oswald, sans-serif;
   font-size: 2rem;
   margin-bottom: 0;
 }
@@ -79,12 +83,7 @@ li p:last-child {
   flex-grow: 1;
 }
 
-/* HOW TO PUT CART IMAGE AND TEXT SIDE BY SIDE ??? */
-
-/* UNEXPECTED ACCORDING TO MARKBOT BUT THEN ??? */
-
 .cart img {
-  /* display: inline; */
   width: 25%;
 }
 
@@ -109,5 +108,4 @@ li p:last-child {
 
 .icons a:first-child {
   margin-right: .5em;
-  /* border: 2px solid red; */
 }
